@@ -15,9 +15,8 @@ CREATE TABLE tool (
 
 CREATE TABLE departments (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  name varchar NOT NULL,
-
-)
+  name varchar NOT NULL
+);
 
 CREATE TABLE customers (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
