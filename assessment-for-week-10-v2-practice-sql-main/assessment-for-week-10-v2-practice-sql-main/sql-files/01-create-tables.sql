@@ -14,8 +14,8 @@ CREATE TABLE tool (
 
 CREATE TABLE customers (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  first_name text,
-  last_name text,
+  first_name text NOT NULL,
+  last_name text NOT NULL,
   phone_number INTEGER
 );
 
