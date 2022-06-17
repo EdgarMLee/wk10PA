@@ -8,7 +8,7 @@ DROP TABLE IF EXISTS customers;
 CREATE TABLE tool (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name varchar(20),
-  price numeric(3,2),
+  price numeric(3,2) NOT NULL,
   department text
 );
 
