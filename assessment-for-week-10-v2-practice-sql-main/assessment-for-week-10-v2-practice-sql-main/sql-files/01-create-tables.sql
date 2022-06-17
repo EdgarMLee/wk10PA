@@ -10,7 +10,7 @@ CREATE TABLE tool (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name varchar(20),
   price numeric(3,2) NOT NULL,
-  department_id INTEGER REFERENCES departments.id
+  department_id INTEGER REFERENCES departments(id) ON DELETE SET NULL
 );
 
 CREATE TABLE departments (
