@@ -1,4 +1,4 @@
-# Practice Assessment Project: SQL
+department# Practice Assessment Project: SQL
 
 This assessment project is testing your ability to make good database design
 choices for a given scenario and events. It also tests your ability to formulate
