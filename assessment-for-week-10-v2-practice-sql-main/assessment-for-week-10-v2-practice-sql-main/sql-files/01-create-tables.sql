@@ -4,13 +4,20 @@ PRAGMA foreign_keys = 1;
 DROP TABLE IF EXISTS purchases;
 DROP TABLE IF EXISTS tool;
 DROP TABLE IF EXISTS customers;
+DROP TABLE IF EXISTS departments;
 
 CREATE TABLE tool (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name varchar(20),
   price numeric(3,2) NOT NULL,
-  department text
+  department_id INTEGER REFERENCES departments.id
 );
+
+CREATE TABLE departments (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name varchar NOT NULL,
+
+)
 
 CREATE TABLE customers (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
