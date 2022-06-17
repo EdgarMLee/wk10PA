@@ -9,8 +9,8 @@ VALUES
 
 INSERT INTO customers (first_name, last_name, phone_number)
 VALUES
-('John', 'Smith', 111-111-1111),
-('Jane', 'Doe',   222-222-2222);
+('John', 'Smith', 1111111111),
+('Jane', 'Doe',   2222222222);
 
 INSERT INTO purchases (customer_id, tool_id, quantity)
 VALUES

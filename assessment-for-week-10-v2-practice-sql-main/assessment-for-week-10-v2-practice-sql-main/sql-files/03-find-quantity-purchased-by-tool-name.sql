@@ -1,5 +1,6 @@
 -- Your code here
-SELECT tool.name, tool.price, tool.quantity
-FROM purchases
-WHERE name LIKE 'Pipe%'
-ORDER BY name AND quantity;
+SELECT tool.name, tool.price, purchases.quantity
+FROM tool
+JOIN purchases ON (tool_id = tool.id)
+WHERE tool.name LIKE 'Pipe%'
+ORDER BY tool.name, quantity;

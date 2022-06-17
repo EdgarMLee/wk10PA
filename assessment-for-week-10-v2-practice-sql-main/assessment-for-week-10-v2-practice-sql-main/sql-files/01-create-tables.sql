@@ -1,9 +1,9 @@
 -- This ensures that SQLite enforces FOREIGN KEY constraints
 PRAGMA foreign_keys = 1;
 
-DROP TABLE IF EXISTS store;
-DROP TABLE IF EXISTS customers;
 DROP TABLE IF EXISTS purchases;
+DROP TABLE IF EXISTS tool;
+DROP TABLE IF EXISTS customers;
 
 CREATE TABLE tool (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
