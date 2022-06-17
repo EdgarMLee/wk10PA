@@ -1,2 +1,3 @@
 DELETE FROM customers
- WHERE customer.first_name = 'John'
+ WHERE customer.first_name = 'John';
+
