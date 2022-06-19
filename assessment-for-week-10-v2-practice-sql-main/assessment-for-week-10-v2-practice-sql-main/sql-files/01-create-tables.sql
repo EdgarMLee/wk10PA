@@ -42,7 +42,7 @@ CREATE TABLE tools (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name TEXT,
   price DECIMAL(3,2),
-  department_id TEXT REFERENCES departments(id) ON DELETE CASCADE
+  department_id TEXT REFERENCES departments(id) ON DELETE SET NULL
 );
 
 CREATE TABLE departments (
