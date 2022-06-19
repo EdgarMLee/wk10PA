@@ -1,2 +1,2 @@
--- DELETE FROM departments
--- WHERE name = 'Plumbing';
+DELETE FROM departments
+WHERE name = 'Plumbing';
