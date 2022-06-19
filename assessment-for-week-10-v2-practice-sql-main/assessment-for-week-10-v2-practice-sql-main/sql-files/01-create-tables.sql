@@ -36,12 +36,18 @@ PRAGMA foreign_keys = 1;
 DROP TABLE IF EXISTS tools;
 DROP TABLE IF EXISTS customers;
 DROP TABLE IF EXISTS purchases;
+DROP TABLE IF EXISTS departments;
 
 CREATE TABLE tools (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name TEXT,
   price DECIMAL(3,2),
-  department TEXT
+  department_id TEXT REFERENCES departments(id) ON DELETE CASCADE
+);
+
+CREATE TABLE departments (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL
 );
 
 CREATE TABLE customers (
