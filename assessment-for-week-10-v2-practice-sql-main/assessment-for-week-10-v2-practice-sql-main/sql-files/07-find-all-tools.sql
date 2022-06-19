@@ -1,2 +1,2 @@
-SELECT name FROM tools
-ORDER BY name ASC;
+-- SELECT name FROM tools
+-- ORDER BY name ASC;
