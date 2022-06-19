@@ -33,9 +33,9 @@ PRAGMA foreign_keys = 1;
 --   quantity INTEGER
 -- );
 
+DROP TABLE IF EXISTS purchases;
 DROP TABLE IF EXISTS tools;
 DROP TABLE IF EXISTS customers;
-DROP TABLE IF EXISTS purchases;
 DROP TABLE IF EXISTS departments;
 
 CREATE TABLE tools (
