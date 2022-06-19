@@ -7,4 +7,4 @@
 SELECT tools.name, purchases.quantity
 FROM tools
 JOIN purchases ON (tool_id = tools.id)
-ORDER BY tools.name, quantity;
+ORDER BY tools.name, quantity ASC;
