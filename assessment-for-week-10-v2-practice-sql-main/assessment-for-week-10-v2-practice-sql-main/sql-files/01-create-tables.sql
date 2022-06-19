@@ -38,3 +38,11 @@ CREATE TABLE tools (
   name TEXT,
   price DECIMAL(3,2)
 )
+
+CREATE TABLE customers (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  first_name TEXT(20),
+  last_name TEXT(20),
+  phone_number INTEGER(10)
+)
+
