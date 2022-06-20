@@ -22,3 +22,8 @@ ORDER BY tools.name, quantity;
 -- FROM tools
 -- JOIN purchases ON (tool_id = tools.id)
 -- WHERE tools.name LIKE 'Pipe%';
+SELECT tools.name, tools.price, SUM(purchases.quantity)
+FROM tools JOIN purchases ON (tools.id = purchases.tool_id)
+WHERE tools.name LIKE 'Pipe%'
+GROUP BY tools.price
+ORDER BY tools.name, purchases.quantity;
